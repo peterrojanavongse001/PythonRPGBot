@@ -8,7 +8,7 @@ on:
 
 jobs:
   Build:
-    name: 'Getting RPG Bot'
+    name: 'Build'
     runs-on: ubuntu-latest
     environment: build
 
