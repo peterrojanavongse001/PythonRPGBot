@@ -28,6 +28,9 @@ jobs:
     - name: Checking current directory
       run: pwd
     
+    - name: Checking files within directory
+      run: ls -lt
+    
     - name: Running RPG Bot
       run: python RPG_Bot_v0.1.py
 
