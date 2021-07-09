@@ -5,6 +5,7 @@ from random import randint
 role = ''
 roles = ["Mage","Warlock","Hunter","Warrior","Druid"]
 mana_roles = ["Mage","Warlock","Druid"]
+items = ["sword","shield","health potion","mana potion"]
 
 player_attributes = {}
 monster_attributes = {}
