@@ -7,8 +7,8 @@ on:
   pull_request:
 
 jobs:
-  RPG_Bot:
-    name: 'RPG Bot'
+  Build:
+    name: 'Getting RPG Bot'
     runs-on: ubuntu-latest
     environment: build
 
@@ -19,11 +19,11 @@ jobs:
 
     steps:
     # Checkout the repository to the GitHub Actions runner
-    - name: Checkout
+    - name: Checkout RPG Bot Branch
       uses: actions/checkout@v2
-
-    - name: Running RPG Bot
-      run: python Bot_RPG_v0.1.py
+    
+    - name: Checking RPG Directory
+      run: ls -lt
 
       # On push to master, build or change infrastructure according to Terraform configuration files
       # Note: It is recommended to set up a required "strict" status check in your repository for "Terraform Cloud". See the documentation on "strict" required status checks for more information: https://help.github.com/en/github/administering-a-repository/types-of-required-status-checks
